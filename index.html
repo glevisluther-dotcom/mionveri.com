@@ -6,11 +6,11 @@
     <title>The Story | MIONVERI</title>
     <style>
         :root {
-            --page-bg: #ffffff;
-            --header-bg: #eddcc6;
-            --dark-charcoal: #252422;
-            --link-blue: #0056b3;
-            --placeholder-blue: #e2eeff;
+            --page-bg: #ffffff;       /* Pure white editorial background */
+            --header-bg: #eddcc6;     /* Tan signature background tone for top bar */
+            --dark-charcoal: #252422; /* High-end muted charcoal black */
+            --link-blue: #0056b3;     /* Active dropdown link color */
+            --placeholder-blue: #e2eeff; /* Soft sky-blue canvas */
         }
 
         body {
@@ -27,6 +27,7 @@
             padding: 2px 4px;
         }
 
+        /* STICKY TRANSPARENT GLASS HEADER */
         header {
             position: fixed;
             top: 0;
@@ -70,6 +71,7 @@
             color: var(--dark-charcoal);
         }
 
+        /* POPUP FULLSCREEN OVERLAY MENU */
         .menu-overlay {
             position: fixed;
             top: 0;
@@ -159,11 +161,11 @@
         }
 
         .sub-link-item.home-link {
-            color: var(--dark-charcoal);
+            color: var(--link-blue);
         }
 
         .sub-link-item.about-link {
-            color: var(--link-blue);
+            color: var(--dark-charcoal);
         }
 
         .menu-footer-info {
@@ -177,6 +179,7 @@
             margin-bottom: 40px;
         }
 
+        /* EDITORIAL STORY LAYOUT AREA */
         .story-container-flow {
             padding-top: 130px;
             display: flex;
@@ -267,15 +270,17 @@
 </head>
 <body>
 
+    <!-- STICKY HEADER SYSTEM -->
     <header>
         <div class="hamburger-icon" id="openMenuBtn">
             <div class="hamburger-line"></div>
             <div class="hamburger-line"></div>
             <div class="hamburger-line"></div>
         </div>
-        <a href="index.html" class="brand-logo">Mionveri</a>
+        <div class="brand-logo" contenteditable="true">Mionveri</div>
     </header>
 
+    <!-- FULLSCREEN OVERLAY MENU PANELS -->
     <div class="menu-overlay" id="menuDrawer">
         <div class="close-menu-btn" id="closeMenuBtn">✕</div>
 
@@ -287,7 +292,7 @@
             
             <div class="sub-menu-links" id="subMenuContainer">
                 <a href="index.html" class="sub-link-item home-link" contenteditable="true">Home</a>
-                <a href="story.html" class="sub-link-item about-link" contenteditable="true">About</a>
+                <a href="index.html" class="sub-link-item about-link" contenteditable="true">About</a>
             </div>
         </div>
 
@@ -296,10 +301,12 @@
         </div>
     </div>
 
+    <!-- MAIN SCROLLABLE EDITORIAL BODY -->
     <main class="story-container-flow">
         
         <h1 class="story-main-title" contenteditable="true">The Story</h1>
         
+        <!-- CHAPTER I BLOCK UNIT -->
         <div class="story-chapter-block">
             <div class="story-subtitle" contenteditable="true">I. The Architecture of Childhood</div>
             
@@ -308,18 +315,12 @@
             </div>
 
             <article class="story-editorial-paragraph" contenteditable="true">
-                True luxury is not manufactured; it is born from the obsession to create. For Malachi, the obsession began in a cramped Houston apartment, armed only with cardboard and boundless imagination. Where others saw waste, he saw skyscrapers, fortresses, and infinite worlds. This was the genesis of a structural mind. From mapping out virtual terrains in early digital spaces to molding literal empires out of mud, puddles, and wild flora, Malachi learned a fundamental truth early on: if a world does not suit you, you must build your own.
-            </article>
-        </div>
-
-        <div class="story-chapter-block">
-            <div class="story-subtitle" contenteditable="true">II. The Artifacts of Evolution</div>
-            <div class="story-image-box-frame">
-                <img src="" alt="Story Concept Image">
-            </div>
-
-            <article class="story-editorial-paragraph" contenteditable="true">
 Use code with caution.
+
+True luxury is not manufactured; it is born from the obsession to create. For Malachi, the obsession began in a cramped Houston apartment, armed only with cardboard and boundless imagination. Where others saw waste, he saw skyscrapers, fortresses, and infinite worlds. This was the genesis of a structural mind. From mapping out virtual terrains in early digital spaces to molding literal empires out of mud, puddles, and wild flora, Malachi learned a fundamental truth early on: if a world does not suit you, you must build your own.
+
+II. The Artifacts of Evolution
+
 
 The transition from raw imagination to wearable art was inevitable. In the halls of high school, Malachi began engineering timepieces from foil, plastic, and paper clips—sculptures for the wrist that caught the eyes of peers and sparked his first taste of independence. Then came the needle and thread. A heavy sewing machine transformed his vision from rigid structures into fluid, tactile forms. He began translating raw human experience into physical objects. When heartbreak struck, he did not retreat; he channeled the weight of...
 
